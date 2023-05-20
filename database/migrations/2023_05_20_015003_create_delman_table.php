@@ -17,6 +17,7 @@ class CreateDelmanTable extends Migration
             $table->id();
             $table->string('nama');
             $table->string('warna');
+            $table->string('ban');
             $table->timestamps();
         });
     }
