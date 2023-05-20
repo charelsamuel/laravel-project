@@ -13,9 +13,9 @@ class CreateKomputerTable extends Migration
      */
     public function up()
     {
-        Schema::create('komputer', function (Blueprint $table) {
+        Schema::table('komputer', function (Blueprint $table) {
             $table->id();
-            $table->name();
+            $table->string('name');
         });
     }
 
