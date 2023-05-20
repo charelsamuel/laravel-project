@@ -15,6 +15,8 @@ class CreateShoesTable extends Migration
     {
         Schema::create('shoes', function (Blueprint $table) {
             $table->id();
+            $table->string('Nama');
+            $table->integer('Harga');
             $table->timestamps();
         });
     }
