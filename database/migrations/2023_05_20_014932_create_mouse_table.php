@@ -15,7 +15,7 @@ class CreateMouseTable extends Migration
     {
         Schema::create('mouse', function (Blueprint $table) {
             $table->id();
-            $table->name();
+            $table->string("name");
             $table->timestamps();
         });
     }
