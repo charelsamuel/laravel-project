@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateKomputerTable extends Migration
+class CreateRocketsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,12 @@ class CreateKomputerTable extends Migration
      */
     public function up()
     {
-        Schema::table('komputer', function (Blueprint $table) {
+        Schema::create('rockets', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('warna');
+            $table->integer('tujuan');
+            $table->timestamps();
         });
     }
 
@@ -26,6 +29,6 @@ class CreateKomputerTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('komputer');
+        Schema::dropIfExists('rockets');
     }
 }
