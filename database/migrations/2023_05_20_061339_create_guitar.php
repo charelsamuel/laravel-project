@@ -15,6 +15,8 @@ class CreateGuitar extends Migration
     {
         Schema::create('guitar', function (Blueprint $table) {
             $table->id();
+            $table->Merek();
+            $table->Warna();
             $table->timestamps();
         });
     }
