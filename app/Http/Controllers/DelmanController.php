@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class DelmanController extends Controller
 {
-    public function isiTabel()
+    public function index()
     {
         $data = [
             [
