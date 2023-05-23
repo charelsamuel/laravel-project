@@ -18,6 +18,7 @@ class CreateGuitar extends Migration
             $table->string('Merek');
             $table->string('Warna');
             $table->string('Pick_up');
+            $table->string('senar');
             $table->timestamps();
         });
     }
