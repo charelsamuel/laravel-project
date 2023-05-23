@@ -13,11 +13,10 @@ class CreateDelmanTable extends Migration
      */
     public function up()
     {
-        Schema::create('delman', function (Blueprint $table) {
+        Schema::table('delman', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
             $table->string('warna');
-            $table->string('ban');
             $table->timestamps();
         });
     }
